@@ -1,0 +1,48 @@
+documenten review, het is een achtergronddocument
+
+voor een onderzoek mist(NMEA achtergronddocument):
+	referentie missen
+	waarom dit onderzoek
+	geen duidelijke conclusie
+	
+planning, geef aan waar je zit in het project
+	dit gaan we doen
+	dit is er gedaan
+	is dit voldoende, moet er nog verder aan gewerkt
+	
+
+een globale planning maken van hoe je alle dingen wil gaan doen in dit project
+
+
+lever gelijk je documentatie als je iets hebt gemaakt, net zoals je nu hebt gedaan met de achtergrond documenten.
+
+wat heb je nou nodig, de waarom vraag	beschrijf dit concreeter wat moet er straks gebeuren
+
+maak een schets(tekening) van hoe het systeem er uit moet gaan zien,
+maak een informatie structuur, hoe moet de informatie gaan lopen
+architectuur plaatje waarin alle functies staan verwoord.
+
+
+hoofdsysteem is Standaard is 12V hierdraaien de moter ook op
+er is al een bug naar 5V (en miss een naar 6V)
+
+functionaliteit voorbeeld is energie voorziening
+
+de boot moet varen
+	kleinere problemen en acceptance criterea
+motor aansturen		roer aansturen		energie voorziening		ruimtevoorziening
+
+voor volgende week, 
+in de mail/afspraak:
+document van functionele decompositie
+product backlog, miss even bijwerken aan de hand van functionele decompositie
+geef aan wie wat gedaan heeft de afgelopen week
+maak afspraken wie de vergadering leid, wie notuleert
+stel iemand aan die het overzicht bewaart over het hele project
+doe een sprint een keer in de twee weken, bijvoorbeeld geef dit wel de vorige week al aan
+
+
+
+
+
+
