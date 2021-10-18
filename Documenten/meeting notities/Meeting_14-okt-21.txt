@@ -1,0 +1,65 @@
+Afspraken volgende week:
+stuur documentje wat je wilt bespreken in de meeting
+actielijst wie wat wanneer doet
+upgrade van microcontroller en functionele decompositie
+
+Feedback functionele decompositie
+	maak een inleiding, waar gaat het project over.
+	titelpagina iets duidelijker maken
+	nummering is ook gelijk de prioriteit: dus niet payload als eerste
+	Verstoring
+	jullie zijn vooral gericht op de communicatie verspreiden van informatie naar elkaar
+	maak helder waar die informatie is en waar dat naar toe moet
+	ict -> communicatie -> binnenComunicatie & buitenComunicatie
+	
+	als objecten niet slim zijn moet ik nog een stukje slimmigeheid maken dat hij dat wel kan
+	een slim object is een object dat over Ethernet kan praten
+
+	Payload feedback
+		schema is een interactie diagram, niet de functionele onderdelen
+		wat is het doel van de payload VB: een sensor die meetingen uitvoort
+	Vaarbedrijf 
+		heeft informatie leveranciers en met die informatie moet wat worden gedaan
+	microcontroller feedback
+		maak geen gebruik van ik/we/wij vorm
+		inleiding beschrijf de context: je hebt dit nodig voor [dit] doel
+		(bijlage alleen als je er naar verwijst)
+		
+		durf eigenwijs te zijn, BV een shield is echt beter want [reden]
+		het is in dit geval een gedachte/voorkeur van de PO
+	
+		criteria: geschikt voor de software die je er op wil gaan draaien
+		en de juiste IO interfaces heeft(met wie moet hij informatie kunnen uitwisselen)
+		SPI, I2C, UART is niet volledig ook nog analoog, serieel
+		! maak eerst in kaart wat er van verwacht wordt (BV kracht/snelheid)
+		
+		Let op met een development_board is niet in eerste instantie gericht voor ontwikkelen i.p.v. productie
+		
+	functionele decompositie is alleen om het probleem helder in kaart te brengen
+	
+	maak een verdeling voor de taken
+	hoe gaan we controlleren of er gedaan is wat was afgesproken
+	maak een planning waar wil je zijn in welke sprints
+		dus aan het eind wil ik een werkend communicatie systeem
+		oke wat wil ik 2 weken daarvoor
+		en wat wil ik 4 weken daarvoor ...
+	VB van een taak sensor data omzetten naar NMEA berichten, dit kan je nu al doen
+	kabels, een set vragen
+
+	weet dat er meestal 2 slagen overheen gaan voordat documenten gelijk goed zijn.
+	
+
+wat zijn sensoren:
+	GPS heeft een serieele communicatie, geeft NMEA berichten
+	Compas geinventeerde NMEA data
+	analoge Potmeter
+	afsandsbediening in lezen, PWM golf (Servo achtig)
+
+acutator
+	output voor de motoren
+	
+
+		
+
+
+
