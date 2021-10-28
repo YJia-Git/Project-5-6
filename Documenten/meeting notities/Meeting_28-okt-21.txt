@@ -1,0 +1,64 @@
+Feedback
+Notulen:
+	Goed noteren wat er gaat gebeuren.
+
+Functionele decompositie:
+	Nog niet alle feedbacks gedocumeerd.
+	
+Achtergrond document 
+-ethernet microcontroller boardtesten
+	Proberen om een leesbaar document te maken voor een ander.
+	Ook een plaatje mist die een helder beeld geven over het document.
+	Mist eisen van je test. Hierdoor krijg je geen heldere conclusie voor de lezer.
+	Dit document moet gemaakt worden voor de lezer.
+	(Voor een eindrapport moet het nette beschrijving hebben)
+
+-NMEA GPS
+	Te weinig om een rapport te maken
+	Niet specifiek een achtergrond onderzoek benoemen. 
+	Hiermee geef je voor dat het over alle componenten te maken heeft.
+
+-PWM-signaal
+	Ook hier moet er een plaatje komen om een helder beeld te geven.
+	Hiermee kan je aan de lezer laten zien wat je erin moet hebben.
+	Je moet ook een algemeen verhaal van maken. Oftewel een communicatie medium.
+
+Onderzoek microcontrollerbord
+	In de plaats van inleiding een abstract van maken.
+	Smart verkeerd begrepen. Smart is namelijk dat het een eigen functie is.
+	Niet het ethernet. Smart is een functioneel object.
+	Eisen is niet duidelijk en gaat niet echt over het processor kracht.
+	En geeft een lijst van testbare eisen. Dit moet toepastbaar zijn van de requirement document.
+	Bijvoorbeeld; opslag, hoe snel, hoe lang en hoe snel je het weg kan schrijven.
+	Oppassen wat voor woorden die je gebruikt. Maar wel definieren. 
+	Laat zien dat een lezer die niet met elektro te maken heeft makkelijker te maken.
+	Document feedback krijgen van onze groep of feedback groep.
+	Shield ook laten beschrijven in een arduino introductie.
+	Ook plaatjes toevoegen. 
+
+Functionele decompositie
+	In de inleiding moet de smart component beter uitgelegd moeten worden.
+	Ook moet het specifieker dus niet zeggen;'NMEA gaat door het systeem'.
+	Mist de samenhang tussen de blokken. dus je ziet niet een high of low level van componenten.
+	Het document moet een beeld hebben dat elke keer ingezoomed is. Dit betekent dat je dan dieper gaat
+	op de kopjes. Hierdoor krijg je levels in je beschrijvingen.
+	Ook geen uitleg over je kopjes. Dus alles moet je uitleggen in je geven context.
+	Bijvoorbeeld; Romp is ook smart en moet zorgen dat er geen water komt.
+	Verstoringen verkeerd begrepen. Nutsverziening is namelijk niet van ons belang.
+	
+
+Requirements:
+	Boot gaat aan/uit.
+	De raspberry pi moet voor elke component veilig afsluiten.
+
+Vragen:
+	Motor controller, weinig info. Als we een servo kunnen aansturen kan je ook de motoren aansturen.
+	Ze hebben hetzelfde aansturen. T200 wordt gebruikt. Er is een kleine documentatie op internet.
+	
+	De compas, er is een soort van werkende code. Maar het is wel 3 jaar uit. Alleen HDG bericht.
+	Flux gate compas. Zelf checken want het kan zijn dat het een HDT bericht kan sturen.
+	Soms loopt dit door elkaarheen. Dus kijken naar de informatie die het geeft.
+	Eerste probleem inventeren. Het signaal is waarschijnlijk niet correct geinventeerd.
+	Rx Tx met elkaar door draaien en ground eruit halen. Dit komt door de verkeerde interfaces.
+	Software serieel kan je wel inventeren.
+	
