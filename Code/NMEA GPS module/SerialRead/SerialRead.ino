@@ -4,7 +4,7 @@ static const uint32_t GPSBaud = 9600;   // serial baundrate of the module
 SoftwareSerial ss(RXPin, TXPin);        // setup serial connection
 
 void setup()  {
-  Serial.begin(115200); // start connection with pc
+  Serial.begin(9600);   // start connection with pc
   ss.begin(GPSBaud);    // start connection with module
 }
 
