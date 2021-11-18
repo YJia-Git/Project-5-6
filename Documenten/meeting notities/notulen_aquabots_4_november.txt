@@ -1,0 +1,38 @@
+Notulen
+
+Ethernet verslag:
+- feedback/commentaar vorige week niet verwerkt
+
+Pwm verslag:
+- beschijving anders dan plaatje
+- moet een duidelijk elektrisch schema hebben
+- test omgeving/context niet duidelijk
+- software beschrijving/koppeling ontbreekt (klopt niet bij het plaatje)
+
+Functionele decompositie:
+- commmentaar niet verwerkt in nieuwe versie
+- context van het probleem niet duidelijk
+- blokken apart uitwerken
+- alleen maar netwerk focus, interfaces met boot ontbreken
+- te veel verwijderd uit de vorige versie
+- eindigt met een diagram van informatie uitwisseling
+- informatie transport (keuzes transport medium duidelijk maken)
+- slimme leverancier van informatie (via afgesproken format informatie verstuurd)
+- slimme leveranciers maken van analoge sensor
+- slimme gebruikers (moet tcp/nmea kunnen versturen en begrijpen)
+- verschillende netwerken (draadloze verbinding, bekabeld verbinding)
+
+algemeen:
+- niet duidelijke opzet met kop en staart
+- samenhang niet duidelijk
+- niet duidelijk waarom ze gemaakt zijn
+- documenten voor opvolgers moeten net zijn, maar intern minder eisen en heeft niet per se feedback voor worden gevraagd tijdens vergadering
+- totale test opstelling moet beschreven zijn
+- zet in een blokschema
+- niet echt een rapportage, geen samenhang met de functionele decompositie
+- inleiding kleine verslagen (herkennen welke plek van de functionele decompositie zich bevindt)
+- nieuwe versies aangeven, alinea/nieuwe deel markeren
+
+pwm signaal naar servo over ethernet voor demo tijdens 50% presentatie
+op tijd zijn met bestellen als we dingen nodig hebben voor demo
+
