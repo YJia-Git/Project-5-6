@@ -1,17 +1,11 @@
-/*
- * Created by ArduinoGetStarted.com
- *
- * This example code is in the public domain
- *
- * Tutorial page: https://arduinogetstarted.com/tutorials/communication-between-two-arduino
- */
+
 
 // ARDUINO #1: TCP CLIENT + A BUTTON/SWITCH
 
 #include <SPI.h>
 #include <Ethernet.h>
 #define ir 2
-
+#define PWM_PIN 3
 
 
 
@@ -20,7 +14,7 @@ const int serverPort = 4080;
 //ezButton button(BUTTON_PIN);  // create ezButton that attach to pin 7;
 
 byte mac[] = {0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED};
-IPAddress serverAddress(192, 168, 137, 241); 
+IPAddress serverAddress(192, 168, 137, 228); 
 EthernetClient TCPclient;
 
 void setup() {
@@ -58,18 +52,13 @@ void loop() {
   }
 
 
-  int statusSensor = digitalRead (ir);
-//  
-  if (statusSensor == 0){
-    TCPclient.write('1'); // LED LOW
-    delay(100);
-  }else
-  {
-    TCPclient.write('0'); // LED High
-     delay(100);
-  }
+  pinMode(PWM_PIN, INPUT);  // delcare as intput
+  double pwm_value = pulseIn(PWM_PIN, HIGH); // read the pulse ont the pin
+  int servo = map(pwm_value, 900, 2000, 0, 180);
+  Serial.println(servo);
+  TCPclient.write(servo); // LED LOW
+  delay(100);
 
-  Serial.println(statusSensor);
 
 
 // TCPclient.write('1'); // LED LOW
