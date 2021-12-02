@@ -1,0 +1,44 @@
+Feedback:
+	Pwm-doc
+		Eerste plaatje is een aansluitingsschema,
+		Tweede plaatje gaat over hoe de schema werkt. (Kan als bijlage gebruikt worden)
+		Voorkeur voor bijlage: 2e
+
+	NMEA-doc
+		Nog een verbindings lijn toevoegen voor de IO. (Om het inzichtelijker te maken)
+		Gebruik voorbeeld coordinaten.
+	
+	Microcontroller bestellen
+		1 raspberry 3b
+		2 roeren 2 motoren en 1 afstandbediening:
+			5x Arduino shield 2
+		2 sensoren (compas en gps)
+			2x Arduino shield 2
+
+	UDP en TCP
+		UDP en TCP kunnen allebei maar om te checken gebruik je de checksum.
+	
+
+	Status sensoren
+		Zelf soort bericht moet kunnen lezen.
+		Hij hoeft alleen namelijk het bericht te lezen om nauwkeuriger te zijn.
+	Moet: 
+		Geen raspberry op actuatoren omdat het niet netjes afsluit.
+
+	Tip:
+		Zorgen dat je niet de notulen vergeet.
+		Taken verdelen en efficient mogelijk te maken.	
+
+	Mag:
+		een test opstelling met een potmeter.	
+
+	Wat moeten wij nog doen:
+		Een bestel lijst maken over ethernet kabels, switch etc.
+		Morgen een afspraak maken met een teamsvergadering voor onze componenten.
+		
+	Gebruikersonderzoek:
+		Dat we onze meetingen kunnen gebruiken.
+		De PO's kunnen van on gebruikersonderzoek eisen meenemen en dat beantwoorden.
+		Je kan een onderzoek aan iemand geven uit je opleiding en onderzoeken wat zei antwoorden.
+		
+	Interface opstellen met de scheepsbrug.
