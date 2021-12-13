@@ -1,0 +1,34 @@
+9-december-2021
+
+Functionele decompositie
+- verder functies van componenten zoals software interfaces bij componenten toevoegen
+- 
+
+
+literatuur onderzoek
+- zag er goed uit
+- was duidelijk
+- 
+
+experimenteel onderzoek
+- flow chart test code
+- beeld informatie voor druk netwerk simuleren
+- worst case scenario weergeven in test
+- tcp kan voor data clashes zorgen
+- zorgen voor centrale klok om latency te meten
+- berichten twee kanten opsturen voor meting
+- niet duidelijk wat gemeten is
+- structuur was wel duidelijk
+
+
+Pwm verslag
+- tekst plaatje servo klopt niet
+- hz en tijd door elkaar 
+- puls lengte bepaald frequentie
+- bereik buiten graden ook belangrijk
+- wat gebeurt bij overflow van 360 naar 0
+- wat gebeurt bij storingen/fouten
+- 
+
+
+
