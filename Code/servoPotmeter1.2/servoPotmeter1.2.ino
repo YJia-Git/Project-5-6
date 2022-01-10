@@ -1,7 +1,4 @@
 #include <Servo.h>
-
-Servo myservo; // create servo object to control a servo
-
 class nmeaReader  {
   private:
     String message;
@@ -105,10 +102,14 @@ class nmeaMaker  {
     }
 };
 
+// fields 
+Servo myservo; // create servo object to control a servo
+
 int potPin = A0; // analog pin used to connect the potentiometer
 int servoPin = 9; // pwm pin used to connect the servo
 
 int deg = 70;
+
 
 void setup() {
   Serial.begin(9600);
@@ -123,7 +124,6 @@ void setup() {
     Serial.println(test.field(3));
     Serial.println(test.field(4));
   }
-  
 }
 
 void loop() {
@@ -132,7 +132,6 @@ void loop() {
   nmeaMaker rudder("RRAAA", 2);
   String fields[2] = {String(map(calDeg(), 0, 180, 0, 1000)), String(map(deg, 0, 180, 0, 1000))};
   Serial.println(rudder.make(fields));
-
   if (Serial.available())  {
     int i = Serial.parseInt(); // recieve new angle
     if (i > 0)  {
