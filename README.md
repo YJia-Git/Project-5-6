@@ -1,3 +1,10 @@
 # Project-56
 Aquabots: modelvaartuig bedieningssystemen
-jia stinkt
+
+bestanden structuur:
+    - Code
+    - Documenten
+    	- Functionele decompositie
+        - aantekening PO meetings
+        - Onderzoeken
+        - Productbacklog
