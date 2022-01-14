@@ -1,0 +1,36 @@
+Notulen
+	NMEA Berichten vertaler:
+	- Gemeten hoek van het afsturen is niet vreemd maar het moet wel in de verwachten richting zitten.
+		- Gemeten hoek die we moeten zoeken.
+	- (testen)Een 2e bericht sturen als het in de war begin te raken.
+	- (testen)Een verkeerde bericht te sturen.
+	- (testen)Een webcam bericht sturen.
+
+	Gebruikersonderzoek:
+	1. Het is een probleem als het niks doet maar niet als het op de juiste positie staat. 
+		Oftewel een dode tijd. Want dit geeft problemen aan auto pilot mode.
+		Het vertraging kan grote problemen zorgen op de rest van het systeem.
+
+	2. - Stilstaan van het roer: maakt over het oversturen van het bericht niks uit voor het auto pilot
+	   - Roer niet reageerd: dan moet er een check zijn dat complex is en checkt of het naar het roer gaat 
+		of dat het uberhaubt nog beweegd.
+	   (tip) Het valt buiten onze opdracht.
+		We kunnen het statusbericht uitbreiden. En verder hoeven wij niet dieper op in te gaan.
+		berichten sturen via de gps. Kijk wat kan en proberen een extra veld maken.
+		Maar eerst maken dat je een bericht kan sturen.
+		De precieze nmea berichten worden later in verwerkt.
+		Dit kan als commentaar of aanbeleven worden voor de volgende groep.
+
+	3.  Zeker 20 componenten. Verschilt per boot en nooit meer dan 100. Maar meest gekozen is 10.
+
+	4. Ongeveer seconde of 3 zou het traag maken. Dus jouw check module kan dit helpen.
+	   (Valt buiten ons opdracht)
+
+	5. (aanvullende info boven ons systeem) Tijd stamps moet als een extra veld toegevoegd worden. 
+		Alleen als het UTC info heeft. Dan is het nutteloos. 
+		GPS (bijvoorbeeld)
+		Woord doc functie die kan zien of het doet. De klok is hiervoor dan in gebruik.
+		Het gebruikt een getal van 0 tot 99. dus een 'volgnummer'.
+		Het is beter om een time stampel te gebruiken.
+	
+	(Opmerking) Stuur wel de documentatie snel op.
