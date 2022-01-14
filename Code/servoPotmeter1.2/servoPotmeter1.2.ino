@@ -115,15 +115,15 @@ void setup() {
   Serial.begin(9600);
   myservo.attach(servoPin); // attaches the servo on pin 9 to the servo object
   myservo.write(deg); // write angle to the servo
-  nmeaReader test("$GPRRS,45678,HGF,65432,fgh,7654dfg*23");
-  if (test.check()) {
-    Serial.println(test.header());
-    Serial.println(test.field(0));
-    Serial.println(test.field(1));
-    Serial.println(test.field(2));
-    Serial.println(test.field(3));
-    Serial.println(test.field(4));
-  }
+//  nmeaReader test("$GPRRS,45678,HGF,65432,fgh,7654dfg*23");
+//  if (test.check()) {
+//    Serial.println(test.header());
+//    Serial.println(test.field(0));
+//    Serial.println(test.field(1));
+//    Serial.println(test.field(2));
+//    Serial.println(test.field(3));
+//    Serial.println(test.field(4));
+//  }
 }
 
 void loop() {
