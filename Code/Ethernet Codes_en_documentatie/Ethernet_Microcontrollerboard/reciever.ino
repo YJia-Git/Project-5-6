@@ -1,18 +1,8 @@
-/*
- * Created by ArduinoGetStarted.com
- *
- * This example code is in the public domain
- *
- * Tutorial page: https://arduinogetstarted.com/tutorials/communication-between-two-arduino
- */
-
 // ARDUINO #2: TCP SERVER + AN LED
 #include <SPI.h>
 #include <Ethernet.h>
 #include <Servo.h>
 
-const int LED_PIN = 2;
-const int PWM_PIN = 9;
 
 const int serverPort = 4080;
  Servo servo;
@@ -43,6 +33,7 @@ void setup() {
 
   // Listening for a TCP client (from Arduino #1)
   TCPserver.begin();
+  //Serial.println("Begin");
 }
 
 void loop() {
@@ -51,31 +42,16 @@ void loop() {
 
   if (client) {
     // Read the command from the TCP client:
-    int value = client.read();
-    Serial.print("- Received command: ");
+    String value = client.readString();
+    //Serial.print("- Received command: ");
     Serial.println(value);
-   
-   int pwm_valueFloat = value / 1000; // pwm in milliseconds
-   servo.write(value);
-
-
-
-
-
-   
-//    if (command == '1')
-//      digitalWrite(LED_PIN, HIGH); // Turn LED on
-//    else if (command == '0')
-//      digitalWrite(LED_PIN, LOW);  // Turn LED off
+    char response[50] = "ACK";
+    client.write(response);
+    //client.flush();
+    Serial.println("send");
 
     Ethernet.maintain();
   }
-
-
-
-
-
-
 
   
 }
