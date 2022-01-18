@@ -142,45 +142,41 @@ void setup() {
 }
 
 void loop() {
-  // send the nmea message over UDP
+  
+  // run this code once a second
   static unsigned long timer = millis();
   if (timer + 1000 < millis())  {
     timer = millis();
+    // make the nmea message
     nmeaMaker rudder("RRAAA", 2);
     String fields[2] = {String(map(calDeg(), 0, 180, 0, 1000)), String(map(deg, 0, 180, 0, 1000))};
-    // Serial.println(rudder.make(fields));
-    Udp.beginPacket(broadcast, 8888);
-    Udp.write(rudder.make(fields).c_str());
-    if (!Udp.endPacket()) {
+    // Serial.println(rudder.make(fields)); // show the nmea message on the serial monitor
+    Udp.beginPacket(broadcast, 8888); // send the message as a broadcast on the network
+    Udp.write(rudder.make(fields).c_str()); // load the nmea message
+    if (!Udp.endPacket()) { // send the message
       Serial.println("Failed to send");
     }
   }
   
-  // try to read the message
+  // try to load a message
   int packetSize = Udp.parsePacket();
   if (packetSize) {
     // read the packet into packetBufffer
     Udp.read(packetBuffer, UDP_TX_PACKET_MAX_SIZE);
-    Serial.println(packetBuffer);
+    Serial.println(packetBuffer); // show the recieved message on the serial monitor
     nmeaReader test(packetBuffer);
-    if (test.check()) {
-      // Serial.println(test.header());
-      if (test.header() == "BSRRA") {
-        int field0 = test.field(0).toInt();
+    if (test.check()) { // check if nmea is correctly recieved
+      if (test.header() == "BSRRA") { // filter on nmea header
+        int field0 = test.field(0).toInt(); // load the first field
         // Serial.println(field0);
-        deg = map(field0, 0, 1000, 0, 180);
+        deg = map(field0, 0, 1000, 0, 180); // map value for the servo
         myservo.write(deg); // write angle to the servo
       }
-      //  Serial.println(test.field(0));
-      //  Serial.println(test.field(1));
-      //  Serial.println(test.field(2));
-      //  Serial.println(test.field(3));
-      //  Serial.println(test.field(4));
     } else {
+      // print the message
       Serial.println(packetBuffer);
     }
-  }
-  // !BSRRA,500*49
+  } 
 }
 
 
