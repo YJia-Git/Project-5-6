@@ -26,8 +26,10 @@ void setup() {
   pinMode(PWM_pin, INPUT);
   // start the Ethernet and UDP:
   Ethernet.begin(mac);
+  delay(200);
   Udp.begin(localPort);
   Serial.println(Ethernet.localIP());
+  
   rudder.begin("BSRRA", 1);
 }
 
@@ -39,34 +41,34 @@ void loop() {
     timer = millis();
     double pwm_value = pulseIn(PWM_pin, HIGH); // read the pulse ont the pin
     double pwm_valueFloat = constrain(pwm_value, 900, 2000)/1000; // pwm in milliseconds
-    Serial.println(pwm_valueFloat);
+    // Serial.println(pwm_valueFloat);
     // make the nmea message
-    
     String fields[1] = {String(map(pwm_value, 900, 2000, 0, 1000))};
-    // Serial.println(rudder.make(fields)); // show the nmea message on the serial monitor
+    Serial.println(rudder.make(fields)); // show the nmea message on the serial monitor
     Udp.beginPacket(broadcast, 8888); // send the message as a broadcast on the network
     Udp.write(rudder.make(fields).c_str()); // load the nmea message
     if (!Udp.endPacket()) { // send the message
       Serial.println("Failed to send");
     }
   }
+  delay(1);
   
-  // try to load a message
-  int packetSize = Udp.parsePacket();
-  if (packetSize) {
-    // read the packet into packetBufffer
-    Udp.read(packetBuffer, UDP_TX_PACKET_MAX_SIZE);
-    Serial.println(packetBuffer); // show the recieved message on the serial monitor
-    if (rudder.check(packetBuffer)) { // check if nmea is correctly recieved
-      if (rudder.getHeader() == "BSRRA") { // filter on nmea header
-        int field0 = rudder.getField(0).toInt(); // load the first field
-        // Serial.println(field0);
-      }
-    } else {
-      // print the message
-      Serial.println(packetBuffer);
-    }
-  } 
+  // // try to load a message
+  // int packetSize = Udp.parsePacket();
+  // if (packetSize) {
+  //   // read the packet into packetBufffer
+  //   Udp.read(packetBuffer, constrain(packetSize, 1, UDP_TX_PACKET_MAX_SIZE));
+  //   Serial.println(packetBuffer); // show the recieved message on the serial monitor
+  //   if (rudder.check(packetBuffer)) { // check if nmea is correctly recieved
+  //     if (rudder.getHeader() == "BSRRA") { // filter on nmea header
+  //       int field0 = rudder.getField(0).toInt(); // load the first field
+  //       // Serial.println(field0);
+  //     }
+  //   } else {
+  //     // print the message
+  //     Serial.println(packetBuffer);
+  //   }
+  // } 
 }
 
 
