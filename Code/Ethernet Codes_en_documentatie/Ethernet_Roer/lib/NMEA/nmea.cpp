@@ -1,42 +1,52 @@
-#include "nmeaReader.h"
-
-String nmeaReader::checkSumCalculator(String currentString) {
+#include "nmea.h"
+// init nmea base code
+void nmea::begin(String header, int numberOfFieleds)  {
+    this->header = header;
+    fields = numberOfFieleds;
+}
+// A function to calculate the checksum of a string
+String nmea::checkSumCalculator(String currentString) {
     int checkSum = 0;
-    // loop trough the whole string
+    // loop trough all chars of the whole string
     for (int i = 0; i < currentString.length(); i++) {
-    char x = currentString[i];
-    byte y = x;
-    // the XOR
-    checkSum ^= y;
+        char x = currentString[i];
+        byte y = x;
+        // the XOR
+        checkSum ^= y;
     }
-    // return the checksum in string format
     String hex = String(checkSum, HEX);
     return hex;
 }
-
-void nmeaReader::newMessage(String input)  {
-    message = input;
+// make nmea message
+String nmea::make(String field[])  {
+    // start making the nmea data
+    String nmea = header; // devices code
+    for (int i = 0; i < fields; i++)  {
+    nmea += "," + String(field[i]);
+    }
+    // add checksum
+    nmea = "!" + nmea + "*" + checkSumCalculator(nmea);
+    return nmea;
 }
-
-bool nmeaReader::check()  {
+// get the nmea message and check if recieved correctly
+bool nmea::check(String input)  {
+    message = input;
     String checksum = message.substring(message.indexOf("*") + 1, message.length());
     String data = message.substring(1, message.indexOf("*"));
     // check if message is recieved correctly
     if (checksum.toInt() == checkSumCalculator(data).toInt()) {
-    return true;
+        return true;
     } else {
-    //        // print both of the checksums
-    //        Serial.print(checksum);
-    //        Serial.print('\t');
-    //        Serial.print(checkSumCalculator(data));
-    return false;
+        return false;
     }
 }
-String nmeaReader::header() {
+// return the header of the message
+String nmea::getHeader() {
     String data = message.substring(1, message.indexOf("*"));
     return data.substring(0, 5);
 }
-String nmeaReader::field(int index) {
+// return the field value of index(start from 0)
+String nmea::getField(int index) {
     String data = message.substring(6, message.indexOf("*"));
     int i, j;
     i = data.indexOf(",");
