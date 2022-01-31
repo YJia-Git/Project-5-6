@@ -8,7 +8,7 @@
 // The IP address will be dependent on your local network:
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xE2 };
 IPAddress broadcast(192, 168, 100, 255);
-// IPAddress ip(192, 168, 100, 178);
+IPAddress ip(192, 168, 100, 102);
 
 unsigned int localPort = 8888;      // local port to listen on
 
@@ -28,7 +28,7 @@ void setup() {
   Serial.begin(9600);
   ss.begin(GPSBaud);    // start connection with GPSmodule
   // start the Ethernet and UDP:
-  Ethernet.begin(mac);
+  Ethernet.begin(mac,ip);
   Udp.begin(localPort);
   Serial.println(Ethernet.localIP());
 }

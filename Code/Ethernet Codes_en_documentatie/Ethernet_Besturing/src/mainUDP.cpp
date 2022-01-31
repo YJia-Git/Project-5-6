@@ -8,6 +8,7 @@
 // The IP address will be dependent on your local network:
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xE0 };
 IPAddress broadcast(192, 168, 100, 255);
+IPAddress ip(192, 168, 100, 100);
 // IPAddress ip(192, 168, 100, 178);
 
 unsigned int localPort = 8888;      // local port to listen on
@@ -25,7 +26,7 @@ void setup() {
   Serial.begin(9600);
   pinMode(PWM_pin, INPUT);
   // start the Ethernet and UDP:
-  Ethernet.begin(mac);
+  Ethernet.begin(mac,ip);
   delay(200);
   Udp.begin(localPort);
   Serial.println(Ethernet.localIP());
@@ -34,7 +35,6 @@ void setup() {
 }
 
 void loop() {
-  
   // run this code once a second
   static unsigned long timer = millis();
   if (timer + 20 < millis())  {
@@ -44,15 +44,15 @@ void loop() {
     // Serial.println(pwm_valueFloat);
     // make the nmea message
     String fields[1] = {String(map(pwm_value, 900, 2000, 0, 1000))};
-    Serial.println(rudder.make(fields)); // show the nmea message on the serial monitor
+    // Serial.println(rudder.make(fields)); // show the nmea message on the serial monitor
+    delay(5);
     Udp.beginPacket(broadcast, 8888); // send the message as a broadcast on the network
     Udp.write(rudder.make(fields).c_str()); // load the nmea message
     if (!Udp.endPacket()) { // send the message
       Serial.println("Failed to send");
     }
   }
-  delay(1);
-  
+  delay(5);
   // // try to load a message
   // int packetSize = Udp.parsePacket();
   // if (packetSize) {
