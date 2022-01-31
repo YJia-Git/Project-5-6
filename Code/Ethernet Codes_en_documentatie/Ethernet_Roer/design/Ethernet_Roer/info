@@ -1,0 +1,93 @@
+{
+  "uuid": "dc2094e1aba44bb708f2bd7ff167eaae",
+  "path": "Offline/Ethernet_Roer",
+  "name": "Ethernet_Roer",
+  "content": "",
+  "created_at": "2022-01-31 19:26:27",
+  "updated_at": "2022-01-31 19:26:49",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "70bae24412fb8c8654474ec40a1f58df",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "fdbc50ef14b342c88e901ca949d49b0e": 1,
+        "1de0db99770443338d888f6e36cb5123": 1,
+        "447d73e35f3f4bb0a2af724a5d9d2beb": 1,
+        "45b9f1208a3544c8850b124d3a3f0356": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "ARDUINO UNO",
+          1,
+          "PKG-ARDUINO-UNO-R3-SHIELD",
+          "B4",
+          {
+            "BOM_Manufacturer Part": "?",
+            "puuid": "b8819106a3c540b885c0fcd2b2d55645",
+            "uuid": "1de0db99770443338d888f6e36cb5123"
+          }
+        ],
+        [
+          "Motor_Servo",
+          1,
+          "",
+          "M2",
+          {
+            "BOM_Manufacturer Part": "",
+            "puuid": "",
+            "uuid": "45b9f1208a3544c8850b124d3a3f0356"
+          }
+        ],
+        [
+          "Ethernet Shield 2",
+          1,
+          "ETHERNET SHIELD 2",
+          "P1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "46d0f1e1fb8e42c5995a864296a38eeb",
+            "uuid": "fdbc50ef14b342c88e901ca949d49b0e"
+          }
+        ],
+        [
+          "Potentiometer",
+          1,
+          "WH160-1-104",
+          "PR1",
+          {
+            "BOM_Supplier Part": "C61836",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "JML",
+            "BOM_Manufacturer Part": "Potentiometer WH160-1-104",
+            "puuid": "14351ca6da7e4004bed7579386feb9cb",
+            "uuid": "447d73e35f3f4bb0a2af724a5d9d2beb"
+          }
+        ]
+      ],
+      "updateTime": 1643653609,
+      "createTime": 1643653609,
+      "histories": [],
+      "created_at": "2022-01-31 19:26:49",
+      "updated_at": "2022-01-31 19:26:49"
+    }
+  ],
+  "sort": [],
+  "title": "Ethernet_Roer",
+  "foldername": "Ethernet_Roer",
+  "schfilename": "Ethernet_Roer.json",
+  "schfilemtime": 1643653609548
+}
