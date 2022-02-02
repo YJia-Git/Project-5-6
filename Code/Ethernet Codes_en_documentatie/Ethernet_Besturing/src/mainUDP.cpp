@@ -7,15 +7,11 @@
 // Enter a MAC address and IP address for your controller below.+
 // The IP address will be dependent on your local network:
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xE0 };
-IPAddress broadcast(192, 168, 100, 255);
 IPAddress ip(192, 168, 100, 100);
-// IPAddress ip(192, 168, 100, 178);
-
+IPAddress broadcast(192, 168, 100, 255);
 unsigned int localPort = 8888;      // local port to listen on
-
 // An EthernetUDP instance to let us send and receive packets over UDP
 EthernetUDP Udp;
-
 // buffers for receiving and sending data
 char packetBuffer[UDP_TX_PACKET_MAX_SIZE];  // buffer to hold incoming packet,
 
@@ -24,14 +20,14 @@ nmea rudder;
 
 void setup() {
   Serial.begin(9600);
+  Serial.println("starting");
   pinMode(PWM_pin, INPUT);
   // start the Ethernet and UDP:
   Ethernet.begin(mac,ip);
-  delay(200);
-  Udp.begin(localPort);
-  Serial.println(Ethernet.localIP());
-  
+  delay(200); // wait so it can connect
+  Udp.begin(localPort);  
   rudder.begin("BSRRA", 1);
+  Serial.println("done");
 }
 
 void loop() {
@@ -53,6 +49,7 @@ void loop() {
     }
   }
   delay(5);
+  /*** this is put as command because in this case we don't need te listen to any messages ***/
   // // try to load a message
   // int packetSize = Udp.parsePacket();
   // if (packetSize) {

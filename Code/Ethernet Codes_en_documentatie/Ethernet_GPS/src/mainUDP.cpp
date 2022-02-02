@@ -7,14 +7,11 @@
 // Enter a MAC address and IP address for your controller below.
 // The IP address will be dependent on your local network:
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xE2 };
-IPAddress broadcast(192, 168, 100, 255);
 IPAddress ip(192, 168, 100, 102);
-
+IPAddress broadcast(192, 168, 100, 255);
 unsigned int localPort = 8888;      // local port to listen on
-
 // An EthernetUDP instance to let us send and receive packets over UDP
 EthernetUDP Udp;
-
 // buffers for receiving and sending data
 char packetBuffer[UDP_TX_PACKET_MAX_SIZE];  // buffer to hold incoming packet,
 
@@ -26,11 +23,13 @@ SoftwareSerial ss(RXPin, TXPin);        // setup serial connection
 
 void setup() {
   Serial.begin(9600);
-  ss.begin(GPSBaud);    // start connection with GPSmodule
+  Serial.println("starting");
+  // start connection with GPSmodule
+  ss.begin(GPSBaud);    
   // start the Ethernet and UDP:
   Ethernet.begin(mac,ip);
   Udp.begin(localPort);
-  Serial.println(Ethernet.localIP());
+  Serial.println("done");
 }
 
 void loop() {
@@ -53,19 +52,5 @@ void loop() {
         Serial.println("Failed to send");
       }
     }
-  }
-  // // try to load a message
-  // int packetSize = Udp.parsePacket();
-  // if (packetSize) {
-  //   // read the packet into packetBufffer
-  //   Udp.read(packetBuffer, UDP_TX_PACKET_MAX_SIZE);
-  //   Serial.println(packetBuffer); // show the recieved message on the serial monitor
-  //   nmeaReader test(packetBuffer);
-  //   if (test.check()) { // check if nmea is correctly recieved
-  //     Serial.println("message got lost");
-  //   } else {
-  //     // print the message
-  //     Serial.println(packetBuffer);
-  //   }
-  // } 
+  } 
 }

@@ -7,17 +7,13 @@
 // Enter a MAC address and IP address for your controller below.
 // The IP address will be dependent on your local network:
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xE1 };
-IPAddress broadcast(192, 168, 100, 255);
 IPAddress ip(192, 168, 100, 101);
-
+IPAddress broadcast(192, 168, 100, 255);
 unsigned int localPort = 8888;      // local port to listen on
-
 // An EthernetUDP instance to let us send and receive packets over UDP
 EthernetUDP Udp;
-
 // buffers for receiving and sending data
 char packetBuffer[500];  // buffer to hold incoming packet,
-
 
 // fields 
 Servo myservo; // create servo object to control a servo
@@ -37,9 +33,8 @@ void setup() {
   // start the Ethernet and UDP:
   Ethernet.begin(mac,ip);
   Udp.begin(localPort);
-  Serial.println("done");
-  Serial.println(Ethernet.localIP());
   rudder.begin("RRAAA", 2);
+  Serial.println("done");
 }
 
 void loop() {
@@ -64,11 +59,8 @@ void loop() {
   // try to load a message
   int packetSize = Udp.parsePacket();
   if (packetSize) {
-    recieved = true;
-    // Serial.println(packetSize);
     // read the packet into packetBufffer
     Udp.read(packetBuffer, constrain(packetSize, 1, UDP_TX_PACKET_MAX_SIZE));
-    // Serial.println(packetBuffer); // show the recieved message on the serial monitor
     if (rudder.check(packetBuffer)) { // check if nmea is correctly recieved
       if (rudder.getHeader() == "BSRRA") { // filter on nmea header
         int field0 = rudder.getField(0).toInt(); // load the first field
@@ -85,7 +77,6 @@ void loop() {
 
 // calculate the degree of the sensor(potMeter)
 int calDeg()  {
-  //return map(input, 10, 907, 175, 5); // linear 1
   int input = analogRead(potPin);
   // calculate degrees with 3 linaer maps
   if (input > 230)  {
