@@ -10,3 +10,10 @@ bestanden structuur:
         - aantekening PO meetings
         - Onderzoeken
         - Productbacklog
+
+
+## Platform IO
+https://platformio.org/
+
+## Arduino IDE
+https://www.arduino.cc/
