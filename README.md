@@ -16,4 +16,4 @@ bestanden structuur:
 https://platformio.org/
 
 ## Arduino IDE
-https://www.arduino.cc/
+https://www.arduino.cc/en/software
