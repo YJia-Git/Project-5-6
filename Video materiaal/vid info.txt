@@ -10,5 +10,66 @@ project doel
 			- Code
 outro
 
-Welkom in het video van project 5-6 van aquabots modelvaartuig communicatie systeem.
-smart -> een component die op zichzelf al kan denken.
+Welkom in het video van project 5-6 van modelvaartuig communicatie systeem. Wij zijn onderdeel van aquabots.
+
+Het doel van het communicatie systeem om snelle communicatie te krijgen binnen de boot.
+
+Hiervoor hebben wij smart componenten nodig. 
+Om de componenten smart te maken moet een component op zichzelf denken.
+
+De communicatie in de boot worden als berichten gestuurd via het NMEA protocol.
+De berichten worden over het ethernet met een UDP broadcast verzonden.
+
+Daarna is het doel van het project het systeem plug & play te maken. 
+Dit moet omdat het systeem ook op andere aquabots gebruik moet gaan worden.
+ 
+Ook vond onze PO het belangrijk dat wij al onze functies in een gezamelijk bestand neer te zetten.
+Hiervoor hebben een functionele decompositie gemaakt. Hierin wordt dan verteld
+de samenhang van de boot en complete beeld.  
+
+1 min ~
+
+-
+Zowel bij de teams aquabots en de opdrachtgever zijn er nog wat onduidelijkheden naar voren gekomen
+met de vorige aquabots groepen. 
+Hiervoor zijn wij dan grotendeels opnieuw gaan maken wat heel onduidelijk was volgens onze groep.
+-
+
+Onze oorspronkelijke rol binnen het project zal vooral onderzoekend zijn 
+toch raakte wij enthouhsaid van de mogelijkheden en hebben een plan voor ons zelf gesteld.
+waar wij uitvoerend bijdrage konden leveren aan dit project.
+
+Na dat wij dit hebben besproken met Jan scholtens onze contact persoon en product eigenaar
+binnen het aquabots team. En hij onze plannen had goed gekeurd. zijn we aan de slag gegaan aan de volgende
+onderdelen.
+
+-  onderzoek
+
+Na da wij gekozen hebben om een uitvoerende rol te vervullen binnen het project.
+Was er nog steeds een verwachting dat wij een onderzoekend aandeel zouden opleveren.
+Elk groepslids heeft dan zelf onderzoek gedaan naar een deel voor het project.
+Voor de onderzoeksverslagen hadden wij geen bijpassende onderwerp om in te richten.
+Sinds ons probleem te specifiek is. 
+Hebben wij in overleg met onze PO's geen bijpassende onderwerp hoeven te maken. 
+Maar dat wij een onderwerp over de smart componenten verder in konden richten.
+
+- simulatie
+
+Om de simulatie te maken van onze smart componenten hebben wij kleine deels
+gekopieerd van vorige aquabots groepen
+Maar grotendeels was opnieuw gemaakt omdat het te onduidelijk was.
+Hiervan kunt u op de zien aan code van onze componenten.
+
+Hierna ziet u dan de opstelling van onze simulatie. 
+Zoals u ziet kunt u de roer zien bewegen wanneer de afstandbediening wordt aangestuurd.
+Dit wordt via NMEA berichten verstuurd over het ethernet.
+
+Als verbetering was het fundamenteel de code fout van de vorige groep. 
+Want het vorige project groep had juist niet de juiste code een lage latency te krijgen.
+Hiervoor hebben wij dan code opnieuw aangepast
+Waardoor de volgende groep een goede basis heeft om verder mee te gaan. 
+Daarnaast hebben wij de leesbaarheid en overzichtlijkheid van de code beter gemaakt.
+ Hierdoor kan de toekomstige groepsleden makkelijk te werk gaan.
+
+outro
+Dit is dan onze demo van aquabots modelvaartuig communictie bedieningssysteem
