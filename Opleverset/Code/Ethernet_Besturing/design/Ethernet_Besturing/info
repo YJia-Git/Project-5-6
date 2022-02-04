@@ -1,0 +1,81 @@
+{
+  "uuid": "472cbe6d4ab454a986ee1d80ffab533f",
+  "path": "Offline/Ethernet_Besturing",
+  "name": "Ethernet_Besturing",
+  "content": "",
+  "created_at": "2022-01-31 19:25:47",
+  "updated_at": "2022-01-31 19:27:06",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "bb9db4c0a30a42c4a56b97b3e8b6d688",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "e5edff0d82ed46fca73fd79e7e6f98a5": 1,
+        "fdbc50ef14b342c88e901ca949d49b0e": 1,
+        "1de0db99770443338d888f6e36cb5123": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "ARDUINO UNO",
+          1,
+          "PKG-ARDUINO-UNO-R3-SHIELD",
+          "B5",
+          {
+            "BOM_Manufacturer Part": "?",
+            "puuid": "b8819106a3c540b885c0fcd2b2d55645",
+            "uuid": "1de0db99770443338d888f6e36cb5123"
+          }
+        ],
+        [
+          "Ethernet Shield 2",
+          1,
+          "ETHERNET SHIELD 2",
+          "P3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "46d0f1e1fb8e42c5995a864296a38eeb",
+            "uuid": "fdbc50ef14b342c88e901ca949d49b0e"
+          }
+        ],
+        [
+          "signal",
+          1,
+          "SIGNAL",
+          "U5",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "a41c5e263502418eb011a402fd9901c8",
+            "uuid": "e5edff0d82ed46fca73fd79e7e6f98a5"
+          }
+        ]
+      ],
+      "updateTime": 1643653626,
+      "createTime": 1643653567,
+      "histories": [],
+      "created_at": "2022-01-31 19:26:07",
+      "updated_at": "2022-01-31 19:27:06"
+    }
+  ],
+  "sort": [],
+  "title": "Ethernet_Besturing",
+  "foldername": "Ethernet_Besturing",
+  "schfilename": "Ethernet_Besturing.json",
+  "schfilemtime": 1643653626051
+}

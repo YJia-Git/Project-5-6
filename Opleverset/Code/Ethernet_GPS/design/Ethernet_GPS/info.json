@@ -1,0 +1,81 @@
+{
+  "uuid": "abd20bd3bd177935bd4343724155f7ec",
+  "path": "Offline/Ethernet_GPS",
+  "name": "Ethernet_GPS",
+  "content": "",
+  "created_at": "2022-01-31 19:24:47",
+  "updated_at": "2022-01-31 19:25:21",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "6e7964667a8b1b25a8e9320f043e9bd3",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "a1386922ef39441780bd54560ebac437": 1,
+        "fdbc50ef14b342c88e901ca949d49b0e": 1,
+        "1de0db99770443338d888f6e36cb5123": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "ARDUINO UNO",
+          1,
+          "PKG-ARDUINO-UNO-R3-SHIELD",
+          "B6",
+          {
+            "BOM_Manufacturer Part": "?",
+            "puuid": "b8819106a3c540b885c0fcd2b2d55645",
+            "uuid": "1de0db99770443338d888f6e36cb5123"
+          }
+        ],
+        [
+          "Ethernet Shield 2",
+          1,
+          "ETHERNET SHIELD 2",
+          "P4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "46d0f1e1fb8e42c5995a864296a38eeb",
+            "uuid": "fdbc50ef14b342c88e901ca949d49b0e"
+          }
+        ],
+        [
+          "GY-NEO6MV2 NEO-6M",
+          1,
+          "GY-NEO6MV2 NEO-6M",
+          "U6",
+          {
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "puuid": "e65951e8c89f4149be0875223598226c",
+            "uuid": "a1386922ef39441780bd54560ebac437"
+          }
+        ]
+      ],
+      "updateTime": 1643653521,
+      "createTime": 1643653521,
+      "histories": [],
+      "created_at": "2022-01-31 19:25:21",
+      "updated_at": "2022-01-31 19:25:21"
+    }
+  ],
+  "sort": [],
+  "title": "Ethernet_GPS",
+  "foldername": "Ethernet_GPS",
+  "schfilename": "Ethernet_GPS.json",
+  "schfilemtime": 1643653521294
+}
