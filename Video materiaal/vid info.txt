@@ -9,3 +9,6 @@ project doel
 		- Onderzoeksverslagen
 			- Code
 outro
+
+Welkom in het video van project 5-6 van aquabots modelvaartuig communicatie systeem.
+smart -> een component die op zichzelf al kan denken.
