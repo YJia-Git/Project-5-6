@@ -1,0 +1,59 @@
+Vragen voor PO
+
+begin niet helemaal aan het einde om je documentatie te maken, dit kan je namelijk helpen helder te krijgen wat er gedaan moet worden.
+Je hebt een opdracht, maak een gestructuurd een document met je stapjes en een opleverset(stel dit document vast op)
+dit verslag is dan je lijdraad voor wat je dan moet gaan doen, aan het einde hoef je dan alleen nog maar de ï te zetten.
+als je iets opschrijft wordt je gedwongen om je gedachten te ordenen, dit voorkomt dat je iets over het hoofd ziet.
+Werk dit document regelmatig bij en laat dat aan Peter en Ronald zien.
+liever dat de documentatie goed is en het niet werkt dan andersom.
+Ontwerp verantwoording, we hebben het zo gemaakt omdat...
+
+Planning, houd rekening met tijd voor verzending, laat andere dingen paralel lopen.
+Verdeel het eerlijk en help elkaar. 
+
+Geef kritiek op elkaars documentatie! speel de rol van Peter ;)
+
+wij trekken het project door wees kritisch wat je mee wilt nemen.
+nu willen ze een robuust iets zien, 
+
+VRAGEN:
+
+Zijn er oude componenten/prototypes voor ons beschikbaar?
+	Er is het een en ander beschikbaar in het lab dat ze hebben, 
+
+Kunnen we die componenten inventariseren?
+
+Welke/watvoor componenten moeten we allemaal aansluiten?
+	actuatoren: motoren, accu's, 
+	status sensoren(betrekking op de actuatoren)
+	navigatie sensoren: GPS, compas
+	taak sensoren: 
+
+Wie beheerd/bestuurd de boot?
+	autopilot
+	afstandsbediening
+
+Wat was het doel van de vorige projectgroepen die aan dit project gewerkt hebben?
+	Hetzelfde als wij...
+	het systeem moet generic worden.
+	USB systeem achtig
+	latency is een probleem van het vorige project
+
+Wat moeten we met de data?
+	loggen/verzamelen
+	deels zelf gebruiken
+	door sturen naar de (wal)
+
+Moeten we vebinding met een server/internet?
+	
+
+Voor wie is het bestemd? (is de persoon in staat omzelf aanpassingen voor nieuwe componenten te maken?)
+	zou iemand kunnen zijn met weinig programeer ervaring.
+
+Met voor verbinding moet het op afstand besturen gedaan worden?
+	Ethernet, WIFI?
+
+Hoe groot is de afstand die deze verbinding moet kunnen bereiken?
+	N.V.T voor nu
+
+Kunnen we een raspberry pi aanschaffen?

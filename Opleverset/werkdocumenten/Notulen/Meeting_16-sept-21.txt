@@ -1,0 +1,20 @@
+notule met agenda
+bespreking van documenten
+
+In de mail voor de afspraak, uiterlijk dinsdag
+Als eerste verwachten we een soort planning
+verzameling van informatie
+
+van 11 tot 12 uur hebben we een moment om met elkaar af te spreken
+schiet er maar een serie in. 
+
+
+
+
+informatie die naar buiten moet, 500ms
+informatie binnin 20ms
+
+elk component heeft iets nodig van een slimigheid
+hij heeft een microcontroller nodig.
+
+ons deel is de kern maken, waarin dan die slimme componenten gekoppelt kunnen worden.

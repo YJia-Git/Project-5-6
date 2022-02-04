@@ -1,0 +1,58 @@
+Notities van de meeting:
+
+-Van te voren een agenda door sturen. En de beloftens laten zien die we vorige meeting hadden besproken.
+	Dus altijd een nodule maken.
+
+-Commentaar documenten backlog:
+	Er zijn verschillen in het functionele diagrammen. Het moet namelijk er link zitten tussen het
+	functionele functies/userstories met de diagrammen. 
+	
+	We moeten onze userstories verbeteren. Dat het een vervolg heeft over andere functies.
+	
+	We kunnen beter onze diagrammen gebruiken om daarvan een document op te kunnen maken.
+	
+	Robuustheid: Eigenschap wat later pas ingang gaat. Nu in het begin van de weken hoeven wij niet perse
+	na toe te kijken.
+
+-Commentaar diagram:
+	Niet te diep maken. Dus niet te veel informatie ingooien. Dus opslag is een aspect van een gebruiker
+	die niet echt van toepassing is in onze diagram.
+
+	We hebben geen verstoring kopje in ons diagram. Maakt niet uit waar het staat als het maar in staat.
+	Dus dat kan ook ergens los staan als je het niet weet wat je er mee moet doen.
+
+	Je kan nutsverziening in doen, maar dat hoeft niet dit perse.
+
+	Ons diagram op verschillende levels maken of het van belang is of niet.
+
+	Communicatie zit de kern voor ons.
+
+	Kopjes uitschrijven wat zij doen, bijvoorbeeld; varen>snelheid, motoren etc.
+
+	Meet systeem is niet een apartbeeld van het boot. Maar van de payload.
+
+	We moeten een blok communicatie hebben die informatie bevat.
+
+	Latency is een kwaliteits eis van netwerken.
+
+	Een eis moet testbaar zijn. 
+
+	Uit een accu komt niet exact 12 volt uit. Dus er kan ook 11 volt uitkomen.
+
+	We hadden geen introductie gegeven aan onze componenten. Dus we moeten laten zien wat elk component doen.
+	en wat het is.
+
+	Logger is niet belang als het niet wordt gevraagd.
+	
+-Docent heeft amper tijd:
+	Ronald en Peter zijn niet elke donderdag beschikbaar. Maar Jan is er elke dag.
+	
+-PO Tips:
+	We kunnen alvast beginnen aan de documenten. Dus we kunnen zeggen wat alles is. En architectuur plaatjes
+	toevoegen.
+	
+	We kunnen alvast een inleiding maken over onze planning.
+
+	Iets maken betekent ook iets documenteren.
+
+Na de herftvakantie is hopelijk wat in de eindmaas komt te zitten en blijft ziten.
