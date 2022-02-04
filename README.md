@@ -1,7 +1,7 @@
 # Project-56
 Aquabots: modelvaartuig bedieningssystemen
 
-![](images/setup.jpg)
+![](images/opstelling.jpg)
 
 bestanden structuur:
     - Code
